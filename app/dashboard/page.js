@@ -20,7 +20,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await fetch('http://localhost:5000/api/user');
+        const res = await fetch('https://b68e1aed-74de-4476-8338-7e2cfc173962-00-mozdo67hqviw.sisko.repl.co/api/user');
         const data = await res.json();
         setUser(data);
       } catch (error) {
