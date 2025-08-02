@@ -1,7 +1,6 @@
 'use client';
 
 import Image from "next/image";
-import bgImage from "@/public/headerImage.avif";
 import Link from "next/link";
 
 export default function Home() {
@@ -12,7 +11,7 @@ export default function Home() {
       <section
         className="relative min-h-screen flex flex-col justify-center items-center text-center text-white px-6"
         style={{
-          backgroundImage: `url(${bgImage.src})`,
+          backgroundImage: `url(${"/headerImage.avif"})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
