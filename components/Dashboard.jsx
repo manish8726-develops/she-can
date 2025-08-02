@@ -20,7 +20,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await fetch(process.env.BACKEND_API||"https://b68e1aed-74de-4476-8338-7e2cfc173962-00-mozdo67hqviw.sisko.repl.co/api/user");
+        const res = await fetch(process.env.BACKEND_API||"https://she-can-server.onrender.com/api/user");
         const data = await res.json();
         setUser(data);
       } catch (error) {
